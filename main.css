@@ -1,0 +1,255 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+.header {
+	border-bottom: 2px solid #dc0101;
+}
+
+.page {
+
+}
+
+.footer {
+	
+}
+
+.column {
+	/*border: 1px solid black;*/
+	width: 1000px;
+	margin: 0px auto;
+}
+
+.page   .column {
+	height: 100vh; /* 100 view port height znaci 100% visine 
+				   /* to pisemo da bi dobili 100% celog prozora.. */
+}
+
+#logo-i-social {
+	display: flex;
+}
+
+#logo-holder {
+	flex-grow: 1;
+	padding: 4px;
+}
+
+#social-holder {
+	flex-grow: 1;
+	text-align: right;
+}
+
+#main-menu {
+	display: flex;
+}
+
+#main-menu > a {
+	flex-grow: 1;
+	text-align: center;
+	color: #dc0101;
+	display: block;
+	padding: 10px;
+	text-decoration: none;
+	transition: 400ms;
+	
+	
+}
+
+#main-menu > a:hover,
+#main-menu > a.active {
+ 
+	background-color: #dc0101;
+	color: #ffffff;
+	
+}
+
+#social-holder > a {
+	text-decoration: none;
+}
+
+#social-holder > a > img {
+	width: 24px;
+	height: 24px;
+	margin: 5px;
+}
+
+#pocetna {
+	text-align: center;
+	color: #ffffff;
+	background: url('img/bg01.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+#pocetna h1 {
+	font-size: 48pt;
+	margin-top: 0px;
+	padding-top: calc(50vh - 250px);
+}
+
+.dark-box {
+	border: 1px solid #ffffff;
+	background-color: #33333350;
+	font-size: 24pt;
+	padding: 40px;
+}
+
+#usluge {
+	background: url('img/bg02.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+#karijera {
+	background: url('img/bg03.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+.align-center {
+	text-align: center;
+}
+
+.krugovi {
+	display: flex;
+	margin: 50px 0;
+}
+
+.krug-holder {
+	flex-grow: 1;
+}
+
+.krug {
+	background: #dc0101;
+	color: #ffffff;
+	font-size: 48px;
+	font-weight: bold;
+	padding: 25%;
+	display: inline-block; 
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+}
+.oznaka {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 10px;
+}
+
+.tehnologije {
+	display: flex;
+	margin: 50px 0;
+}
+
+.tehnologija {
+	flex-grow: 1;
+	text-align: center;
+}
+
+.tehnologija img {
+	height: 48px;
+	width: 48px;
+}
+.tehnologija p {
+	font-weight: bold;
+}
+#usluge {
+	color: #fff;
+}
+
+
+#usluge h2 {
+	padding: 40px;
+}
+
+.service-row {
+	display:flex;
+	margin-bottom: 40px;
+	justify-content: space-between;
+}
+
+.service-row > div {
+	border: 1px solid #fff;
+	text-align: center;
+	position: relative;
+	width: 300px;
+	height: 150px;
+	
+}
+
+.service-row > div > img {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.service-row > div > p {
+	position: absolute;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	padding: 10px;
+	background-color: #ffffffA2;
+	margin-bottom: 0px;
+	color: #000;
+	font-weight: bold;
+	border-top: 1px solid #fff;
+}
+
+#proizvodi h2{
+	padding-top: 50px;
+}
+
+.matrica {
+	margin-top: 40px;
+	height: 500px;
+	display: grid;
+	grid-template: "a b c"
+				   "d b e"
+				   "f f g";
+	align-content: space-between;
+	justify-content: space-between;
+	
+}
+
+#proizvod-a {
+	grid-area: a;
+}
+#proizvod-b {
+	grid-area: b;
+	
+}
+#proizvod-c {
+	grid-area: c;
+}
+#proizvod-d {
+	grid-area: d;
+}
+#proizvod-e {
+	grid-area: e;
+}
+#proizvod-f {
+	grid-area: f;
+}
+#proizvod-g {
+	grid-area: g;
+}
+
+.proizvod {
+	display: grid;
+	grid-template: "region";
+	align-content: stretch;
+	justify-content: stretch;
+}
+
+.proizvod img {
+	grid-area: region;
+	justify-self: stretch;
+	align-self: stretch;
+}
+.proizvod .text-holder {
+	grid-area: region;
+	justify-self: stretch;
+	align-self: stretch;
+}
